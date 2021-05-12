@@ -1,0 +1,94 @@
+
+body {
+    font-family: "Roboto";
+    font-family: "Roboto";
+    background-color:#3d84b8;
+}
+
+.navbar-brand{
+    font-weight: 100;
+    color: black;
+    font-size: 30;
+    font-family: monospace;
+}
+
+.body2{
+    background-color: #b8b5ff;
+}
+.body3 {
+    width: 100%;
+    font-family: "Roboto";
+    background: #13547a;
+  
+} 
+.row {
+    height: 33.33%;
+    width: 100%;
+}
+.row2 {
+    height: 33.33%;
+    width: 60%;
+}
+.col{
+    float: left;
+    width: 50%;
+}
+.head-space2{
+    padding-right: 50px;
+    color: white;
+}
+.head-space{
+    padding: 50px;
+    color: white;
+
+}
+
+.content {
+    color: black;
+    background-color: transparent;
+}
+.tagline {
+    font-family: "Monoton";
+    font-size: 80px;
+    color: white;
+}
+.quote {
+    font-family: "Guci";
+    font-size: 50px;
+    color: white;
+}
+.clock{
+    color: white;
+    align-content: right;
+    font-family: "DancingF"
+}
+.left-side{
+    padding-left: 80%;
+    font-family: "Roboto";
+}
+.prompt{
+    color:black;
+    font-size: 20px;
+}
+
+@font-face{
+    font-family: "Roboto";
+    src: url("../fonts/Roboto_Mono/RobotoMono-Light.ttf")
+}
+@font-face{
+    font-family: "Guci";
+    src: url("../fonts/Gugi/Gugi-Regular.ttf")
+}
+@font-face{
+    font-family: "DancingF";
+    src: url("../fonts/Dancing_Script/DancingScript-Regular.ttf")
+}
+@font-face{
+    font-family: "Monoton";
+    src: url("../fonts/Monoton/Monoton-Regular.ttf")
+}
+@font-face{
+    font-family: "PressStart";
+    src: url("../fonts/East_Sea_Dokdo/EastSeaDokdo-Regular.ttf")
+}
+

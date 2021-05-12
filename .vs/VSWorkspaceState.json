@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\static",
+    "\\src\\static\\css",
+    "\\src\\static\\form-static\\vendor",
+    "\\src\\static\\form-static\\vendor\\bootstrap",
+    "\\src\\static\\form-static\\vendor\\css-hamburgers",
+    "\\src\\static\\form-static\\vendor\\jquery",
+    "\\src\\static\\form-static\\vendor\\select2",
+    "\\src\\static\\form-static\\vendor\\tilt"
+  ],
+  "SelectedNode": "\\src\\static\\css\\style.css",
+  "PreviewInSolutionExplorer": false
+}
