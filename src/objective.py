@@ -1,12 +1,3 @@
-# Copyright 2020 The `Kumar Nityan Suman` (https://github.com/nityansuman/). All Rights Reserved.
-#
-#                     GNU GENERAL PUBLIC LICENSE
-#                        Version 3, 29 June 2007
-#  Copyright (C) 2007 Free Software Foundation, Inc. <http://fsf.org/>
-#  Everyone is permitted to copy and distribute verbatim copies
-#  of this license document, but changing it is not allowed.
-# ==============================================================================
-
 
 # Import packages
 import re
@@ -32,7 +23,7 @@ class ObjectiveTest:
             print("Warning raised at `ObjectiveTest.__init__`", e)
 
     def get_trivial_sentences(self):
-        """Method to dentify sentences with potential to create objective questions
+        """Method to identify sentences with potential to create objective questions
         
         Returns:
             list -- Sentences with potential to create objective questions

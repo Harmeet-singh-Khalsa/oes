@@ -1,6 +1,12 @@
 ﻿<html lang="en">
 <head>
-	<title>Automate the examination system</title>
+	<title>OES</title>
+	<style>
+		#container{
+			float: right;
+			padding-top: 0px;
+		}
+	</style>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
@@ -15,7 +21,9 @@
 </head>
 <body class="body2">
 	<div class="head-space">
+		
 		<h5>Logged in as.. {{username}}</h5>
+		
 	</div>
 	<div class="contact1 myownfont" style="box-shadow: 5px 8px 32px ;">
 		<div class="contact1-pic js-tilt" data-tilt>
@@ -48,6 +56,10 @@
 				<a href="/" class="contact1-form-newbtn-home">Home</a>
 			</div>
 		</form>
+	</div>
+	<div id="container">
+		<video src="" autoplay="true" id="videoElement">
+		</video>
 	</div>
 </body>
 
@@ -100,5 +112,21 @@
 				}
 			}
 		</script>
+
+		<script type="text/javascript">
+		
+
+		</script>
+		<script>
+			navigator.mediaDevices.getUserMedia({
+				video:{
+					width:300,
+					height:180
+			}
+			}).then(stream =>{
+				document.getElementById("videoElement").srcObject = stream;
+			})
+			
+			</script>
 	<script src="..static/js/main.js"></script>
 </html>
