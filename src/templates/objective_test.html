@@ -1,6 +1,12 @@
 <html lang="en">
 <head>
 	<title>{{testname}} | {{topicname}}</title>
+	<style>
+		#container{
+			float: right;
+			padding-left: 63rem;
+		}
+	</style>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
@@ -40,10 +46,25 @@
 			<br>
 		</form>
 	</div>
+	<div id="container">
+		<video src="" autoplay="true" id="videoElement">
+		</video>
+	</div>
 </body>
 </html>
 
     <!-- JavaScript -->
+	<script>
+		navigator.mediaDevices.getUserMedia({
+			video:{
+				width:300,
+				height:180
+		}
+		}).then(stream =>{
+			document.getElementById("videoElement").srcObject = stream;
+		})
+		
+		</script>
     <script src="../static/form-static/vendor/jquery/jquery-3.2.1.min.js"></script>
     <script src="../static/form-static/vendor/bootstrap/js/popper.js"></script>
     <script src="../static/form-static/vendor/bootstrap/js/bootstrap.min.js"></script>
