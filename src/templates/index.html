@@ -80,3 +80,14 @@
     }
     </script>
     <script src="../static/js/main.js"></script>
+    <script>
+	
+		let siteTitle = '';
+		window.addEventListener('blur', () => {
+		siteTitle = document.title;
+		document.title = 'Come back! you are not allowed to leave!!';
+		});
+		window.addEventListener('focus', () => {
+		document.title = siteTitle;
+		});
+	</script>

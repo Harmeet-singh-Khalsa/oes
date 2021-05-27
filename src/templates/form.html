@@ -61,6 +61,25 @@
 		<video src="" autoplay="true" id="videoElement">
 		</video>
 	</div>
+	<div class="modal" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+		  <div class="modal-content">
+			<div class="modal-header">
+			  <h5 class="modal-title">Modal title</h5>
+			  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			  </button>
+			</div>
+			<div class="modal-body">
+			  <p>Modal body text goes here.</p>
+			</div>
+			<div class="modal-footer">
+			  <button type="button" class="btn btn-primary">Save changes</button>
+			  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			</div>
+		  </div>
+		</div>
+	  </div>
 </body>
 
 	<!-- JavaScript -->
@@ -129,4 +148,52 @@
 			
 			</script>
 	<script src="..static/js/main.js"></script>
+
+
+	<script>
+	
+		let siteTitle = '';
+		window.addEventListener('blur', () => {
+		siteTitle = document.title;
+		document.title = 'Come back! you are not allowed to leave!!';
+		});
+		window.addEventListener('focus', () => {
+		document.title = siteTitle;
+		});
+	</script>
+
+	<script>
+		$(window).blur(function() {
+			alert('You are not allowed to leave this page!! ');
+			
+			});
+	</script>
+	
+	
+
+	<!--
+<script>
+		var really = false;
+		var allow = true;
+		window.onbeforeunload = function(){
+			if(allow){
+				if(!really && true){
+					really =true;
+					var mesg = "Are you sure you want to leave this page?";
+			return mesg;
+
+				}
+
+			}else{
+				allow = true;
+			
+			}
+			
+		}
+	</script>
+	-->
+	
+
+
+
 </html>
